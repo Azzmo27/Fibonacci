@@ -14,16 +14,8 @@ public class Main {
         }
 
         int n = Integer.parseInt(line);
-        int fib = Fibonacci(n);
+        int fib = Fibonacci.calculate(n);
 
         System.out.printf("The %d Fibonacci number is %d%n", n, fib);
-    }
-
-    public static int Fibonacci(int n) {
-        if (n == 1 || n == 2) {
-            return 1;
-        } else {
-            return Fibonacci(n - 1) + Fibonacci(n - 2);
-        }
     }
 }
